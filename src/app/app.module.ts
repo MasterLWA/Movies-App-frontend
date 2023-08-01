@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 // import { TestComponent } from './Component/test/test.component';
-import { NavbarComponent } from './component/navbar/navbar.component';
 import { HomeComponent } from './component/home/home.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { DetailsComponent } from './component/details/details.component';
@@ -13,12 +12,13 @@ import { NotAuthorizedComponent } from './component/not-authorized/not-authorize
 import { SearchComponent } from './component/search/search.component';
 import { ModalComponent } from './component/modal/modal.component';
 import { LoaderComponent } from './component/loader/loader.component';
+import { NavComponent } from './component/nav/nav.component';
+import { ProfitPipe } from './pipes/profit.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     // TestComponent,
-    NavbarComponent,
     HomeComponent,
     FooterComponent,
     DetailsComponent,
@@ -27,7 +27,9 @@ import { LoaderComponent } from './component/loader/loader.component';
     NotAuthorizedComponent,
     SearchComponent,
     ModalComponent,
-    LoaderComponent
+    LoaderComponent,
+    NavComponent,
+    ProfitPipe
   ],
   imports: [
     BrowserModule

@@ -1,0 +1,19 @@
+<h1>{{title | uppercase }}</h1>
+<h3>
+    today : {{today | date:'dd/MM/yyyy'}}
+</h3>
+
+<p>
+    {{imageUrl}}
+    <img src={{imageUrl}} /> 
+    <!-- <img [src]="imageUrl" /> -->
+    <!-- both are right -->
+</p>
+
+<p>
+    {{price | currency}}
+    <br>
+    <span>
+    selling price : {{sellingprice}} <br> profile:{{sellingprice}}
+    </span>
+</p>
