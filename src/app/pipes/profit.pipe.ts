@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class ProfitPipe implements PipeTransform {
 
   transform(value:number, profitPer= 10 ): number {
-        return value*profitPer/100;
+        return value*profitPer/10;
   }
 
 

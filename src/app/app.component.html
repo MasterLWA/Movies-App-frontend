@@ -1,19 +1,54 @@
-<h1>{{title | uppercase }}</h1>
-<h3>
-    today : {{today | date:'dd/MM/yyyy'}}
-</h3>
+<app-nav></app-nav>
 
-<p>
-    {{imageUrl}}
-    <img src={{imageUrl}} />
-    <!-- <img [src]="imageUrl" /> -->
-    <!-- both are right -->
-</p>
+<!-- Content -->
+<app-home></app-home>
 
-<p>
-    {{price | currency}}
-    <br>
-    <span>
-    selling price : {{sellingprice}} <br> profile:{{sellingprice | profit}}
-    </span>
-</p>
+<!-- Footer -->
+<app-footer></app-footer>
+
+
+<!--<h1>{{title | uppercase }}</h1>-->
+<!--<h3>-->
+<!--    today : {{today | date:'dd/MM/yyyy'}}-->
+<!--</h3>-->
+
+<!--<p>-->
+<!--    {{imageUrl}}-->
+<!--    <img src={{imageUrl}} [width]="imgWidth" />-->
+<!--    &lt;!&ndash; <img [src]="imageUrl" /> &ndash;&gt;-->
+<!--    &lt;!&ndash; both are right &ndash;&gt;-->
+<!--</p>-->
+
+<!--<p>-->
+<!--    {{price | currency}}-->
+<!--    <br>-->
+<!--    <span>-->
+<!--    selling price : {{sellingprice}} <br> profile:{{sellingprice | profit }}-->
+<!--    </span>-->
+<!--</p>-->
+
+<!--<hr>-->
+
+<!--<button type="button" [attr.aria-label]="attributevalue">{{title}}</button>-->
+
+<!--<hr>-->
+<!--<input #color type="text" placeholder="enter color">-->
+<!--<button (click)="setCOlor(color.value)">Set Color</button>-->
+
+<!--<h1 [style.color]="H1color">-->
+<!--  Sample Text-->
+<!--</h1>-->
+
+<!--<div class="container">-->
+<!--<input [(ngModel)]="fullName">-->
+<!--<p class="text-primary">-->
+<!--  {{fullName | titlecase}}-->
+<!--</p>-->
+
+
+<!--<input [(ngModel)]="Foods">-->
+<!--<p class="text-primary">-->
+<!--  {{Foods | titlecase}}-->
+<!--</p>-->
+
+<!--</div>-->

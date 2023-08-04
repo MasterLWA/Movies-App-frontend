@@ -14,6 +14,7 @@ import { ModalComponent } from './component/modal/modal.component';
 import { LoaderComponent } from './component/loader/loader.component';
 import { NavComponent } from './component/nav/nav.component';
 import { ProfitPipe } from './pipes/profit.pipe';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -29,10 +30,13 @@ import { ProfitPipe } from './pipes/profit.pipe';
     ModalComponent,
     LoaderComponent,
     NavComponent,
+
+    //pipes
     ProfitPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
