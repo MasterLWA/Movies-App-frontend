@@ -16,6 +16,8 @@ import { NavComponent } from './component/nav/nav.component';
 import { ProfitPipe } from './pipes/profit.pipe';
 import {FormsModule} from "@angular/forms";
 import { ActorDetailsComponent } from './Component/actor-details/actor-details.component';
+import {RouterModule} from "@angular/router";
+import {AppRoutesModule} from "./modules/app.routes";
 
 
 @NgModule({
@@ -36,11 +38,12 @@ import { ActorDetailsComponent } from './Component/actor-details/actor-details.c
 
     //pipes
     ProfitPipe,
-     
-    
+
+
   ],
   imports: [
     BrowserModule,
+      AppRoutesModule,
     FormsModule
   ],
   providers: [],
