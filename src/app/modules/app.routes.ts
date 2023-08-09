@@ -12,10 +12,10 @@ const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'home', component: HomeComponent },
     { path: 'details', component: DetailsComponent },
-    { path: 'details/movies', component: DetailsMoviesComponent },
-    { path: 'details/reviews', component: DetailsReviewsComponent },
-    { path: 'not-authorized', component: NotAuthorizedComponent },
-    { path: 'search', component:SearchComponent },
+    { path: 'details/movies/:id', component: DetailsMoviesComponent },
+    { path: 'details/reviews/:id', component: DetailsReviewsComponent },
+    { path: 'not-authorized/:id', component: NotAuthorizedComponent },
+    { path: 'search/:movieTitle', component:SearchComponent },
     { path: '**', redirectTo: 'home' }
 ];
 
