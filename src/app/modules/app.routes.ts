@@ -6,6 +6,7 @@ import { DetailsComponent } from '../component/details/details.component';
 import { DetailsMoviesComponent } from '../component/details-movies/details-movies.component';
 import { DetailsReviewsComponent } from '../component/details-reviews/details-reviews.component';
 import { NotAuthorizedComponent } from '../component/not-authorized/not-authorized.component';
+import { SearchComponent } from '../component/search/search.component';
 
 const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -14,6 +15,8 @@ const routes: Routes = [
     { path: 'details/movies', component: DetailsMoviesComponent },
     { path: 'details/reviews', component: DetailsReviewsComponent },
     { path: 'not-authorized', component: NotAuthorizedComponent },
+    { path: 'search', component:SearchComponent },
+    { path: '**', redirectTo: 'home' }
 ];
 
 @NgModule({
