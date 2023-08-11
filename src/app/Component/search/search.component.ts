@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import {NavComponent} from "../nav/nav.component";
+
 
 @Component({
   selector: 'app-search',
@@ -7,7 +9,8 @@ import { Component } from '@angular/core';
 })
 export class SearchComponent {
 
-  MovieTitle: string = '';
+    @Input() searchText  : string = "";
+
 
   constructor() { }
 

@@ -18,6 +18,7 @@ import {FormsModule} from "@angular/forms";
 import { ActorDetailsComponent } from './Component/actor-details/actor-details.component';
 import {RouterModule} from "@angular/router";
 import {AppRoutesModule} from "./modules/app.routes";
+import { NotFoundComponent } from './component/not-found/not-found.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import {AppRoutesModule} from "./modules/app.routes";
     LoaderComponent,
     NavComponent,
     ActorDetailsComponent,
+    NotFoundComponent,
 
     //pipes
     ProfitPipe,

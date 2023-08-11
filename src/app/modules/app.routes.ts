@@ -7,6 +7,7 @@ import { DetailsMoviesComponent } from '../component/details-movies/details-movi
 import { DetailsReviewsComponent } from '../component/details-reviews/details-reviews.component';
 import { NotAuthorizedComponent } from '../component/not-authorized/not-authorized.component';
 import { SearchComponent } from '../component/search/search.component';
+import {NotFoundComponent} from "../component/not-found/not-found.component";
 
 const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -16,7 +17,10 @@ const routes: Routes = [
     { path: 'details/reviews/:id', component: DetailsReviewsComponent },
     { path: 'not-authorized/:id', component: NotAuthorizedComponent },
     { path: 'search/:movieTitle', component:SearchComponent },
-    { path: '**', redirectTo: 'home' }
+    { path: '**', component: NotFoundComponent}
+
+    //START: Nested Routes
+
 ];
 
 @NgModule({
