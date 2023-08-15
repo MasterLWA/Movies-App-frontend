@@ -1,6 +1,11 @@
-  <H2 [ngStyle]="currentStyles">
+<!--  <H2 [ngStyle]="currentStyles">-->
+<!--    Movie App-->
+<!--  </H2>-->
+
+<h2 appHeader *ngIf="isVisible" class="text-center">
     Movie App
-  </H2>
+</h2>
+
 <div class="row">
     <div class="col-md-8">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -116,56 +121,56 @@
           </div>
     </div>
 
-    <div class="col-md-3">
-      <div class="card">
-          <img src="https://m.media-amazon.com/images/M/MV5BMTYzOTc2NzU3N15BMl5BanBnXkFtZTcwNjY3MDE3NQ@@._V1_.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Captain America</h5>
-            <p class="card-text">Captain America is a superhero appearing in American comic books published by Marvel Comics.</p>
-            <a href="#" class="btn btn-warning text-white"><i class="bi bi-box"></i> Trailer</a>
-          </div>
-          <div class="card-footer text-center text-muted">
-              <span style="float:left;"><i class="bi bi-calendar"></i>2011</span>
-              <span ><i class="bi bi-star-fill"></i>9.5/10</span>
-              <span style="float:right;"><i class="bi bi-trophy"></i> 2h 30min</span>
+<!--    <div class="col-md-3">-->
+<!--      <div class="card">-->
+<!--          <img src="https://m.media-amazon.com/images/M/MV5BMTYzOTc2NzU3N15BMl5BanBnXkFtZTcwNjY3MDE3NQ@@._V1_.jpg" class="card-img-top" alt="...">-->
+<!--          <div class="card-body">-->
+<!--            <h5 class="card-title">Captain America</h5>-->
+<!--            <p class="card-text">Captain America is a superhero appearing in American comic books published by Marvel Comics.</p>-->
+<!--            <a href="#" class="btn btn-warning text-white"><i class="bi bi-box"></i> Trailer</a>-->
+<!--          </div>-->
+<!--          <div class="card-footer text-center text-muted">-->
+<!--              <span style="float:left;"><i class="bi bi-calendar"></i>2011</span>-->
+<!--              <span ><i class="bi bi-star-fill"></i>9.5/10</span>-->
+<!--              <span style="float:right;"><i class="bi bi-trophy"></i> 2h 30min</span>-->
 
-          </div>
-        </div>
-    </div>
+<!--          </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
-  <div class="col-md-3">
-    <div class="card">
-        <img src="https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title"> Oppenheimer</h5>
-          <p class="card-text">Oppenheimer is an upcoming American biographical drama film written and directed by Christopher Nolan.</p>
-          <a href="#" class="btn btn-warning text-white"><i class="bi bi-box"></i> Trailer</a>
-        </div>
-        <div class="card-footer text-center text-muted">
-            <span style="float:left;"><i class="bi bi-calendar"></i>2023</span>
-            <span ><i class="bi bi-star-fill"></i>7.5/10</span>
-            <span style="float:right;"><i class="bi bi-trophy"></i> 2h 54min</span>
+<!--    <div class="col-md-3">-->
+<!--    <div class="card">-->
+<!--        <img src="https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_.jpg" class="card-img-top" alt="...">-->
+<!--        <div class="card-body">-->
+<!--          <h5 class="card-title"> Oppenheimer</h5>-->
+<!--          <p class="card-text">Oppenheimer is an upcoming American biographical drama film written and directed by Christopher Nolan.</p>-->
+<!--          <a href="#" class="btn btn-warning text-white"><i class="bi bi-box"></i> Trailer</a>-->
+<!--        </div>-->
+<!--        <div class="card-footer text-center text-muted">-->
+<!--            <span style="float:left;"><i class="bi bi-calendar"></i>2023</span>-->
+<!--            <span ><i class="bi bi-star-fill"></i>7.5/10</span>-->
+<!--            <span style="float:right;"><i class="bi bi-trophy"></i> 2h 54min</span>-->
 
-        </div>
-      </div>
-</div>
+<!--        </div>-->
+<!--      </div>-->
+<!--</div>-->
 
-<div class="col-md-3">
-  <div class="card">
-      <img src="https://resizing.flixster.com/B58e7oGMTrLyhTAczhyJrBfQAoQ=/206x305/v2/https://flxt.tmsimg.com/assets/p8548776_p_v8_ad.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title"> The Amazing Spider Man</h5>
-        <p class="card-text"> The Amazing Spider man is a superhero appearing in American comic books published by Marvel Comics.</p>
-        <a href="#" class="btn btn-warning text-white"><i class="bi bi-box"></i> Trailer</a>
-      </div>
-      <div class="card-footer text-center text-muted">
-          <span style="float:left;"><i class="bi bi-calendar"></i>2023</span>
-          <span ><i class="bi bi-star-fill"></i>7.5/10</span>
-          <span style="float:right;"><i class="bi bi-trophy"></i> 2h 54min</span>
+<!--    <div class="col-md-3">-->
+<!--  <div class="card">-->
+<!--      <img src="https://resizing.flixster.com/B58e7oGMTrLyhTAczhyJrBfQAoQ=/206x305/v2/https://flxt.tmsimg.com/assets/p8548776_p_v8_ad.jpg" class="card-img-top" alt="...">-->
+<!--      <div class="card-body">-->
+<!--        <h5 class="card-title"> The Amazing Spider Man</h5>-->
+<!--        <p class="card-text"> The Amazing Spider man is a superhero appearing in American comic books published by Marvel Comics.</p>-->
+<!--        <a href="#" class="btn btn-warning text-white"><i class="bi bi-box"></i> Trailer</a>-->
+<!--      </div>-->
+<!--      <div class="card-footer text-center text-muted">-->
+<!--          <span style="float:left;"><i class="bi bi-calendar"></i>2023</span>-->
+<!--          <span ><i class="bi bi-star-fill"></i>7.5/10</span>-->
+<!--          <span style="float:right;"><i class="bi bi-trophy"></i> 2h 54min</span>-->
 
-      </div>
-    </div>
-</div>
+<!--      </div>-->
+<!--    </div>-->
+<!--</div>-->
 
 
 

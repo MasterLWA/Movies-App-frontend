@@ -19,6 +19,7 @@ import { ActorDetailsComponent } from './Component/actor-details/actor-details.c
 import {RouterModule} from "@angular/router";
 import {AppRoutesModule} from "./modules/app.routes";
 import { NotFoundComponent } from './component/not-found/not-found.component';
+import { HeaderDirective } from './Directive/header.directive';
 
 
 @NgModule({
@@ -40,6 +41,9 @@ import { NotFoundComponent } from './component/not-found/not-found.component';
 
     //pipes
     ProfitPipe,
+
+      //directives
+      HeaderDirective,
 
 
   ],
