@@ -37,5 +37,26 @@ export class DetailsComponent implements OnInit, OnChanges, AfterContentInit, Af
   }
 
 
+  actors: any = [
+    {
+      name: 'Tom Cruise',
+    },
+    {
+      name: 'Tom Hanks',
+    },
+    {
+      name: 'Tom Hardy',
+    },
+    {
+      name: 'Tom Holland',
+    },
+    {
+      name: 'Tom Felton'
+    }
+
+  ]
+
+
+
 
 }

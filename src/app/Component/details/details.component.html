@@ -2,11 +2,11 @@
 <br>
 
 <div class="row">
-    
+
     <div class="col-md-6">
-        <iframe 
-            width="100%" 
-            height="315" 
+        <iframe
+            width="100%"
+            height="315"
             src="https://www.youtube.com/embed/tgbNymZ7vqY">
         </iframe>
 
@@ -20,9 +20,7 @@
                 <div class="card">
                     <div class="card-header">Starts</div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Start 1 Name</li>
-                            <li class="list-group-item">Start 2 Name</li>
-                            <li class="list-group-item">Start 3 Name</li>
+                            <li class="list-group-item" *ngFor="let actor of actors">{{actor.name}}</li>
                         </ul>
                 </div>
             </div>
@@ -51,7 +49,7 @@
         </div>
     </div>
 
-    
+
 </div>
 
 

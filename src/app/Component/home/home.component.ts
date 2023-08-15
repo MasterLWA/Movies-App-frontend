@@ -74,6 +74,11 @@ export class HomeComponent {
 
     ]
 
+    intergerValue = 5;
+
+
+
+
 
   // currentStyles:Record<string, string> = {}; // defined record type to store key value pair of string type
 

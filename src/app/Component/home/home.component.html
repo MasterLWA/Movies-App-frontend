@@ -6,6 +6,26 @@
     Movie App
 </h2>
 
+
+<!--<div [ngSwitch]="intergerValue">-->
+<!--    <div *ngSwitchCase="1">-->
+<!--        <h2>One</h2>-->
+<!--    </div>-->
+<!--    <div *ngSwitchCase="2">-->
+<!--        <h2>Two</h2>-->
+<!--    </div>-->
+<!--    <div *ngSwitchCase="3">-->
+<!--        <h2>Three</h2>-->
+<!--    </div>-->
+<!--    <div *ngSwitchCase="5">-->
+<!--        <h2>Value is {{intergerValue}}</h2>-->
+<!--    </div>-->
+<!--    <div *ngSwitchDefault>-->
+<!--        <h2>Default</h2>-->
+<!--    </div>-->
+<!--</div>-->
+
+
 <div class="row">
     <div class="col-md-8">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -73,7 +93,7 @@
           </div>
 
 
-<!--          <div class="card mb-3" style="max-width: 540px;">-->
+<!--          <div class="card mb-3" style="max-width: 540px;"> -->
 <!--            <div class="row g-0">-->
 <!--              <div class="col-md-4">-->
 <!--                <img src="https://www.sonypictures.com/sites/default/files/styles/max_560x840/public/title-key-art/DP_7175931_SPIDER-MANACROSSTHESPIDER-VERSE_2000x3000_HEDkRedShadowKeyArt_0.jpg?itok=CkYeyihm" class="img-fluid rounded-start" alt="...">-->
@@ -105,13 +125,13 @@
 
     <hr>
 
-    <div class="col-md-3" *ngFor="let movie of fanFavoriteMovies" routerLink="/movie/{{movie.id}}">
+    <div class="col-md-3" *ngFor="let movie of fanFavoriteMovies">
         <div class="card">
             <img [src]="movie.imageUrl" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">{{movie.title}}</h5>
               <p class="card-text">{{movie.discription}}</p>
-              <a href="details/{{movie.id}}" class="btn btn-warning text-white"><i class="bi bi-box"></i> Trailer</a>
+              <a href="/details/movies/:{{movie.id}}" class="btn btn-warning text-white"><i class="bi bi-box"></i> Trailer</a>
             </div>
             <div class="card-footer text-center text-muted">
                 <span style="float:left;"><i class="bi bi-calendar"></i>{{movie.releaseDate}}</span>
