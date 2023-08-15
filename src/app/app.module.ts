@@ -20,6 +20,10 @@ import {RouterModule} from "@angular/router";
 import {AppRoutesModule} from "./modules/app.routes";
 import { NotFoundComponent } from './component/not-found/not-found.component';
 import { HeaderDirective } from './Directive/header.directive';
+import { MyIfDirective } from './Directive/my-if.directive';
+
+//import HttpClientModule
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -44,6 +48,7 @@ import { HeaderDirective } from './Directive/header.directive';
 
       //directives
       HeaderDirective,
+        MyIfDirective,
 
 
   ],
